@@ -2,11 +2,7 @@ import { Button, StyleSheet, Text, View } from 'react-native'
 import React from 'react'
 import { useNavigation } from '@react-navigation/native';
 import { StackNavigationProp } from '@react-navigation/stack';
-
-type RootStackParamList = {
-    Home: undefined;
-    Chat: undefined;
-  };
+import { RootStackParamList } from '../root/roots';
   
   export default function HomeScreen() {
     const navigation = useNavigation<StackNavigationProp<RootStackParamList>>();
